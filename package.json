@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/js-game/",
+    "build": "vite build --base=/js-practice-http/",
     "preview": "vite preview"
   },
   "devDependencies": {
