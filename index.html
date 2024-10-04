@@ -2,26 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/js-game/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice: slot machine</title>
-    <link
+    <title>Practice: http-requests</title>
+     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/js-game/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/js-game/assets/index-CIEvlzsV.css">
+    <script type="module" crossorigin src="/js-practice-http/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-practice-http/assets/vendor-DJ7Tif3U.js">
+    <link rel="stylesheet" crossorigin href="/js-practice-http/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/js-practice-http/assets/index-BlsL2XOb.css">
   </head>
-  <body>
-    <button class="start-btn">Start game</button>
-    <div class="container">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+  <body class="p-3 m-0 border-0">  
+    <form class="w-50 mx-auto mb-3 input-group js-search-form" name="newsForm">
+      <input
+        class="form-control js-search-input"
+        type="search"
+        name="newsKeyword"
+        placeholder="Find news..."
+        required
+      />
+      <button class="btn btn-primary" type="submit" id="button-addon2">
+        <span class="text-white">Search news</span>
+      </button>
+    </form>
+    <div class="articles js-cards-container">
+         <article class="card">
+        <img
+          class="card-img-top"
+          src="https://placehold.co/600x400?text=Image"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+          <a href="#" class="btn btn-outline-primary">Read more</a>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card-img-top"
+          src="https://placehold.co/600x400?text=Image"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+          <a href="#" class="btn btn-outline-primary">Read more</a>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card-img-top"
+          src="https://placehold.co/600x400?text=Image"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+          <a href="#" class="btn btn-outline-primary">Read more</a>
+        </div>
+      </article> 
     </div>
-    <p class="result"></p>
-
-    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
-
+    <div class="d-flex justify-content-center p-3">
+      <button class="btn btn-primary text-light js-load-more">
+        <span
+          class="spinner spinner-border spinner-border-sm js-loader"
+          aria-hidden="true"
+        ></span>
+        <span class="ms-1">Load more</span>
+      </button>
+    </div>
+  </body>
   </body>
 </html>
