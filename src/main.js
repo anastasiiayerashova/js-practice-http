@@ -83,8 +83,8 @@ async function handleLoadMore() {
     handleScroll()
 
     if (currentPage >= Math.min(pages, 16)) {
-    refs.loadMoreBtn.classList.add("is-hidden");
-    return;
+      refs.loadMoreBtn.classList.add("is-hidden");
+       iziToast.success({ message: 'Last page 🥺'});
     }
   }
   catch (error) {
